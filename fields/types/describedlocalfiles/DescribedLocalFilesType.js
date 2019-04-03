@@ -269,7 +269,7 @@ describedlocalfiles.prototype.uploadFiles = function (item, files, update,callba
 		var id = uploadedFile._id;
 
 		var prefix = field.options.datePrefix ? moment().format(field.options.datePrefix) + '-' : '';
-		var filename = prefix + file.name;
+		var filename = prefix + file.filename;
 		var filetype = file.mimetype || file.type;
 
 		if (field.options.allowedTypes && !_.includes(field.options.allowedTypes, filetype)) {
